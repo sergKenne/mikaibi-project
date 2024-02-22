@@ -39,14 +39,19 @@
   const handleChange = (e) => {
     checkValue.value = e.target.value;
   }
-  const getResult = () => {
-    const answer = radioItems.value.find(item => (item.isTrue && (item.val == checkValue.value)));
-    if (!answer) {
-      alert("You chose the wrong answer");
+const getResult = () => {
+  const answer = radioItems.value.find(item => (item.isTrue && (item.val == checkValue.value)));
+    if (checkValue.value.length >= 1) { 
+      if (!answer) {
+        alert("You chose the wrong answer");
+      } else {
+        alert("You chose the correct answer A " + answer.val);
+      }
+      isHide.value = true;
     } else {
-      alert("You choosed the right answer " + answer.val);
+      alert("Please choose one answer!")
     }
-    isHide.value = true;
+    
   }
 </script>
 
