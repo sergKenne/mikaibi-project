@@ -40,14 +40,13 @@
     checkValue.value = e.target.value;
   }
   const getResult = () => {
-    const answer = radioItems.value.find(item => (item.isTrue && (item.val == checkValue.value)) )//(item.val == checkValue) && item.isTrue)
+    const answer = radioItems.value.find(item => (item.isTrue && (item.val == checkValue.value)));
     if (!answer) {
-      alert("Your answer is false");
+      alert("You chose the wrong answer");
     } else {
       alert("You choosed the right answer " + answer.val);
-      isHide.value = true;
     }
-    
+    isHide.value = true;
   }
 </script>
 
