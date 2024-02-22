@@ -45,7 +45,7 @@ const getResult = () => {
       if (!answer) {
         alert("You chose the wrong answer");
       } else {
-        alert("You chose the correct answer A " + answer.val);
+        alert("You chose the correct answer " + answer.val);
       }
       isHide.value = true;
     } else {
