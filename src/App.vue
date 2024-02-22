@@ -7,7 +7,7 @@
           <img src="./assets/img/bulb.png" alt="bulb">
         </button>
         <h3 class="main__subtitle">Choose the right answer</h3>
-        <h1 class="main__title">Which shape shows thirds</h1>
+        <h1 class="main__title">Which shape shows thirds?</h1>
         <img src="./assets/img/task_img.png" alt="shape" class="main__images">
       </div>
     </main>
